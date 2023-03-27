@@ -9,7 +9,7 @@ class WelcomeScreen extends StatelessWidget {
     return SafeArea(
         child: Scaffold(
       body: Padding(
-        padding: const EdgeInsets.only(left: 10,right: 10),
+        padding: const EdgeInsets.only(left: 10, right: 10),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -73,7 +73,7 @@ class WelcomeScreen extends StatelessWidget {
                           color: Colors.white),
                     )),
                     height: 50,
-                      width: 320,
+                    width: 320,
                     color: Colors.black,
                   ),
                 ),
@@ -82,7 +82,8 @@ class WelcomeScreen extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
                       return SignInScreen();
                     }));
                   },
@@ -92,15 +93,17 @@ class WelcomeScreen extends StatelessWidget {
                       child: Center(
                           child: Text(
                         'Sign in',
-                        style:
-                            TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                        style: TextStyle(
+                            fontSize: 20, fontWeight: FontWeight.bold),
                       )),
                       height: 50,
                       width: 320,
                       color: Color.fromARGB(255, 226, 225, 225),
                     ),
                   ),
-                )
+                ),
+               
+             
               ],
             ),
           ],
@@ -109,3 +112,4 @@ class WelcomeScreen extends StatelessWidget {
     ));
   }
 }
+  
