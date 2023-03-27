@@ -19,15 +19,18 @@ class WelcomeScreen extends StatelessWidget {
                   height: 40,
                 ),
                 Container(
-                    height: 300,
-                    width: 300,
+                    height: 250,
+                    width: 250,
                     child: Image(
                       image: AssetImage('assets/welcome.png'),
                       fit: BoxFit.cover,
                     )),
                 Text(
                   'Growing your',
-                  style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                      fontSize: 35,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black),
                 ),
                 RichText(
                   text: TextSpan(
@@ -48,7 +51,10 @@ class WelcomeScreen extends StatelessWidget {
                 ),
                 Text(
                   'then you think',
-                  style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                      fontSize: 35,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black),
                 ),
                 SizedBox(
                   height: 10,
@@ -59,7 +65,7 @@ class WelcomeScreen extends StatelessWidget {
                       fontSize: 17, color: Color.fromARGB(255, 117, 114, 114)),
                 ),
                 SizedBox(
-                  height: 100,
+                  height: 150,
                 ),
                 ClipRRect(
                   borderRadius: BorderRadius.circular(10),
@@ -102,8 +108,6 @@ class WelcomeScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-               
-             
               ],
             ),
           ],
@@ -112,4 +116,3 @@ class WelcomeScreen extends StatelessWidget {
     ));
   }
 }
-  

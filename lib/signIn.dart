@@ -16,22 +16,20 @@ class SignInScreen extends StatelessWidget {
           SingleChildScrollView(
             child: Column(
               children: [
-                SizedBox(
-                  height: 50,
-                ),
+                SizedBox(height: 30,),
                 Container(
-                    height: 300,
-                    width: 300,
+                    height: 250,
+                    width: 250,
                     child: Image(
                       image: AssetImage('assets/signin.png'),
                       fit: BoxFit.cover,
                     )),
                 Text(
                   'Welcome back!',
-                  style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold,color: Colors.black),
                 ),
                 SizedBox(
-                  height: 10,
+                  height: 5,
                 ),
                 Text(
                   'You\'ve been missed',
@@ -39,7 +37,7 @@ class SignInScreen extends StatelessWidget {
                       fontSize: 20, color: Color.fromARGB(255, 117, 114, 114)),
                 ),
                 SizedBox(
-                  height: 30,
+                  height: 20,
                 ),
                 InkWell(
                   onTap: () {
@@ -150,6 +148,24 @@ class SignInScreen extends StatelessWidget {
                     height: 50,
                     width: 320,
                     color: Colors.black,
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                RichText(
+                  text: TextSpan(
+                    text: 'Don\'t have an account ? ',
+                    style: TextStyle(
+                        fontSize: 17,
+                        color: Color.fromARGB(255, 117, 114, 114)),
+                    children: const <TextSpan>[
+                      TextSpan(
+                          text: ' Sign up here',
+                          style: TextStyle(
+                              fontSize: 17,
+                              color: Color.fromARGB(255, 122, 52, 214))),
+                    ],
                   ),
                 ),
               ],
