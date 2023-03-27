@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "949590981713",
+    "project_id": "skill-board-73768",
+    "storage_bucket": "skill-board-73768.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949590981713:android:40038572ae53d04dbd4c70",
+        "android_client_info": {
+          "package_name": "com.example.signup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949590981713-tm4ma29u6kpmllv8jki30au426epu7ev.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcXMYn9C-mVfbMgAVMXBXugTgm66KEbRM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "949590981713-tm4ma29u6kpmllv8jki30au426epu7ev.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

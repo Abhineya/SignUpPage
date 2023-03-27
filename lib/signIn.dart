@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 class SignInScreen extends StatelessWidget {
   const SignInScreen({super.key});
@@ -37,22 +38,22 @@ class SignInScreen extends StatelessWidget {
                     fontSize: 20, color: Color.fromARGB(255, 117, 114, 114)),
               ),
               SizedBox(
-                height: 20,
+                height: 30,
               ),
               InkWell(
                 onTap: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return SignInScreen();
-                  }));
+                  GoogleSignIn().signIn();
                 },
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(10),
                   child: Container(
                     child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Image(image: AssetImage('assets/google.png')),
-                        SizedBox(width: 10,),
+                        SizedBox(
+                          width: 10,
+                        ),
                         Text(
                           'Sign in with Google',
                           style: TextStyle(
@@ -60,11 +61,40 @@ class SignInScreen extends StatelessWidget {
                         ),
                       ],
                     ),
-                    height: 60,
-                    width: 350,
+                    height: 50,
+                    width: 320,
                     color: Color.fromARGB(255, 226, 225, 225),
                   ),
                 ),
+              ),
+              SizedBox(
+                height: 25,
+              ),
+              Row(
+                children: [
+                  Container(
+                    height: 2,
+                    width: 130,
+                    color: Color.fromARGB(255, 226, 225, 225),
+                  ),
+                  SizedBox(
+                    width: 15,
+                  ),
+                  Text(
+                    'Or',
+                    style: TextStyle(
+                        fontSize: 20,
+                        color: Color.fromARGB(255, 117, 114, 114)),
+                  ),
+                  SizedBox(
+                    width: 15,
+                  ),
+                  Container(
+                    height: 2,
+                    width: 130,
+                    color: Color.fromARGB(255, 226, 225, 225),
+                  ),
+                ],
               )
             ],
           ),
